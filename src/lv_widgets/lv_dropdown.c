@@ -876,9 +876,9 @@ static lv_design_res_t lv_dropdown_page_design(lv_obj_t * page, const lv_area_t 
             if(has_common) {
                 if(ext->pr_opt_id != LV_DROPDOWN_PR_NONE) {
                     draw_box_label(ddlist, &clip_area_core, ext->pr_opt_id, LV_STATE_PRESSED);
-                }
-
+                } else {
                 draw_box_label(ddlist, &clip_area_core, ext->sel_opt_id, LV_STATE_DEFAULT);
+                }
             }
         }
     }
